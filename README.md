@@ -1,93 +1,80 @@
-<div align="center">
+# frontend-noslop
 
-# 🎨 frontend-noslop
+A production-grade design and engineering skill pack for AI coding agents. Enforces intentional visual direction, curated component libraries, OKLCH color science, and strict verification gates to eliminate generic AI-generated interfaces.
 
-### *The Sovereign Anti-Slop Frontend Engine for AI Coding Agents*
-
-**Stop AI agents from generating generic, purple-gradient SaaS clones.**  
-*Enforce studio-grade craft, intentional aesthetics, and production engineering across Claude Code, Cursor, Gemini CLI, Antigravity, and Codex.*
-
----
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Skills.sh](https://img.shields.io/badge/skills.sh-certified-emerald?style=for-the-badge&logo=codeforces)](https://skills.sh)
-[![Compatible with Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-orange?style=for-the-badge&logo=anthropic)](https://anthropic.com)
-[![Compatible with Antigravity](https://img.shields.io/badge/Antigravity-Native-8A2BE2?style=for-the-badge)](https://github.com)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
-
-[**Quick Install**](#-quick-install) • [**Why This Exists**](#-the-epidemic-of-ai-slop) • [**The 8-Skill Engine**](#-the-8-skill-unified-engine) • [**The 5-Phase Pipeline**](#-the-5-phase-pipeline) • [**The Hall of Shame**](#-the-hall-of-shame-before--after)
+[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg?style=flat-square)](LICENSE)
+[![Skills.sh](https://img.shields.io/badge/skills.sh-certified-black?style=flat-square)](https://skills.sh)
+[![Compatible with Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-black?style=flat-square)](https://anthropic.com)
+[![Compatible with Antigravity](https://img.shields.io/badge/Antigravity-Native-black?style=flat-square)](https://github.com)
 
 ---
 
-</div>
+## The Problem: Median AI UI
 
-<br/>
+Language models sample the statistical average of web code in their training datasets. Without explicit constraints, agents default to predictable clichés:
 
-## 🌋 The Epidemic of "AI Slop" UI
+- Indiscriminate dark mode with purple-to-cyan linear gradients and radial blur orbs.
+- Identical 3-column feature cards with pastel-backed icons.
+- Placeholder marketing copy stuffed with empty buzzwords (*"seamlessly streamline next-gen workflows"*).
+- Gratuitous magic sparkle icons on primary action buttons.
+- Fragile code: root-level `"use client"`, layout jumps (CLS), and missing loading or error states.
 
-Language models naturally sample the **statistical median** of open-source web code. When you ask an AI assistant to *"build a landing page"* or *"design a dashboard"*, it defaults to the same tired tropes:
-
-* 🚫 **The Cliché Dark Gradient:** Dark slate backgrounds with blurred purple/cyan radial glow orbs.
-* 🚫 **The 3-Card Grid:** An identical 3-column row of rounded cards with Lucide icons in pastel squares.
-* 🚫 **Hollow AI Copy:** *"Unlock next-gen potential to seamlessly streamline your synergy."*
-* 🚫 **Sparkle Buttons:** Gratuitous `✨ Magic` icons on every primary button.
-* 🚫 **Fragile Code:** Root-level `"use client"`, layout jumps (CLS), and zero consideration for empty, loading, or error states.
-
-### ⚡ The Solution: `frontend-noslop`
-
-**`frontend-noslop`** is an uncompromising meta-orchestrator that intercepts the agent’s default generation loop and replaces it with an **enforced design-engineer workflow**. It elevates your AI from a mechanical layout generator to an award-winning design director.
+`frontend-noslop` operates as an orchestration layer over the agent's workflow, enforcing the standards of senior design-engineers before any code is generated or delivered.
 
 ---
 
-## 🏛️ The 8-Skill Unified Engine
+## Unified Architecture
 
-`frontend-noslop` does not reinvent the wheel—it fuses the **8 most battle-tested frontend & craft skills in the global AI ecosystem** into a single cohesive pipeline:
+`frontend-noslop` integrates eight established frontend and craft skills into a unified pipeline:
 
-| Integrated Skill | Origin / Author | What It Brings to Your Agent |
+| Skill | Author / Source | Role in Pipeline |
 |---|---|---|
-| **`impeccable`** | Paul Bakaus (ex-Google) | The non-negotiable **Craft Floor**, plus `/critique`, `/polish`, and `/audit` commands. |
-| **`frontend-design`** | Anthropic | Mandates an **intentional aesthetic stance** (e.g. Editorial Brutalism, Luxury Minimal) before any code is written. |
-| **`design-taste-frontend`** | Leonxlnx | Optical balance, whitespace tension, mathematical typography scales, and visual rhythm. |
-| **`frontend-design-deslop`** | Samber | Eliminates median Tailwind clichés, enforces OKLCH color palettes and semantic `DESIGN.md` tokens. |
-| **`antislop-ui`** | Miqdad Badjuber | Concrete visual rules banning generic blue-purple treatments and robotic components. |
-| **`no-ai-slop`** | Peter Yang | Cleanses UX copy, headlines, and microcopy of AI jargon and throat-clearing fluff. |
-| **`pick-ui-library`** | Emil Kowalski | Opinionated, taste-driven library selection (Radix, Sonner, Vaul, CMDK, Motion). |
-| **`react-best-practices`** | Vercel Engineering | Server Components (RSC) optimization, streaming boundaries, and zero-CLS skeleton reservation. |
+| `impeccable` | Paul Bakaus | Craft floor enforcement and automated review commands (`/critique`, `/polish`, `/audit`). |
+| `frontend-design` | Anthropic | Mandates an explicit aesthetic direction before generating markup. |
+| `design-taste-frontend` | Leonxlnx | Optical balance, whitespace calibration, and typography scales. |
+| `frontend-design-deslop` | Samber | Eliminates median Tailwind presets, establishes OKLCH tokens and `DESIGN.md`. |
+| `antislop-ui` | Miqdad Badjuber | Concrete visual rules banning cliché treatments and template cards. |
+| `no-ai-slop` | Peter Yang | Edits UX copy and headings to remove AI jargon and throat-clearing openers. |
+| `pick-ui-library` | Emil Kowalski | Curated selection of unstyled, accessible component primitives. |
+| `react-best-practices` | Vercel Engineering | Server Components architecture, streaming boundaries, and performance patterns. |
 
 ---
 
-## 🔄 The 5-Phase Pipeline
+## Five-Phase Workflow
 
-When `frontend-noslop` is active, every UI task is processed through an immutable 5-phase quality gate:
+Every interface task passes through five sequential stages:
 
-```mermaid
-flowchart TD
-    A["Phase 1: Formulate Aesthetic Stance\n(frontend-design + deslop)"] --> B["Phase 2: Establish Tokens & Palette\n(antislop-ui + OKLCH Color Space)"]
-    B --> C["Phase 3: Curated Library Selection\n(pick-ui-library: Radix, Sonner, Vaul)"]
-    C --> D["Phase 4: Production Architecture\n(react-best-practices + 5-State Coverage)"]
-    D --> E["Phase 5: The No-Slop Delivery Gate\n(impeccable: /critique + /polish)"]
-    E --> F["🚀 Production-Grade Craft Shipped"]
+```
+[ Phase 1: Aesthetic Stance ]  → Define domain-specific visual direction (frontend-design)
+             ↓
+[ Phase 2: Design Tokens ]     → Establish OKLCH color palette and modular type scale (antislop-ui)
+             ↓
+[ Phase 3: Library Selection ] → Pick accessible, unstyled primitives (pick-ui-library)
+             ↓
+[ Phase 4: Implementation ]    → Enforce Server Components and all 5 component states (react-best-practices)
+             ↓
+[ Phase 5: Verification Gate ] → Run craft audit and remove copy slop (impeccable + no-ai-slop)
 ```
 
 ---
 
-## ⚡ Quick Install
+## Installation
 
-### 1. Universal Skills CLI (Any Agent)
-The fastest way to install across 70+ agent environments (Claude Code, Cursor, Copilot, Antigravity, Codex):
+### Skills CLI (Universal)
+Installs into Claude Code, Cursor, Copilot, Antigravity, Cline, and Codex:
 
 ```bash
 npx skills add AhmadJalhoom20/frontend-noslop -g -y
 ```
 
-### 2. Google Antigravity / Gemini CLI
-Native installation into your global agent config:
+### Google Antigravity / Gemini CLI
+Clone directly into your global config directory:
 
 ```bash
 git clone https://github.com/AhmadJalhoom20/frontend-noslop.git ~/.gemini/config/plugins/frontend-noslop
 ```
 
-### 3. Claude Code Marketplace
+### Claude Code Marketplace
 ```bash
 /plugin marketplace add AhmadJalhoom20/frontend-noslop
 /plugin install frontend-noslop
@@ -95,57 +82,59 @@ git clone https://github.com/AhmadJalhoom20/frontend-noslop.git ~/.gemini/config
 
 ---
 
-## 🥊 The Hall of Shame: Before & After
+## Direct Comparison
 
-| The AI Default (Slop) 🤮 | The `frontend-noslop` Standard 🏆 |
-|---|---|
-| **Color:** `bg-gradient-to-r from-purple-500 to-indigo-600` | **Color:** Intentional OKLCH brand palette with verified WCAG 2.1 AA contrast ratios. |
-| **Layout:** Centered title + 3 identical cards in a row | **Layout:** Asymmetric editorial layouts, dynamic data rows, contextual interactive previews. |
-| **Typography:** Default Inter font with arbitrary `text-[15px]` | **Typography:** Curated font pairings (e.g. architectural Serif headers with Grotesque body) on a strict modular scale. |
-| **Copy:** *"Empower your team with cutting-edge synergy"* | **Copy:** Crisp, punchy, human statements describing actual capabilities and real metrics. |
-| **States:** Blank page while loading, abrupt content pop-in | **States:** Mathematical layout skeletons matching final dimensions (Zero Cumulative Layout Shift). |
-| **Icons:** Random pastel-backed icons with sparkle badges | **Icons:** Minimalist, optically centered semantic icons (or no icons where clean typography speaks louder). |
-
----
-
-## 🧰 The Curated Stack
-
-We strictly enforce **Emil Kowalski's** curated frontend toolchain to guarantee high-craft tactile feel:
-
-* **Primitives & A11y:** [Radix UI](https://www.radix-ui.com/) / [Base UI](https://base-ui.com/) (Headless, accessible, keyboard-first)
-* **Toasts & Notifications:** [Sonner](https://sonner.emilkowal.ski/) (Physics-based responsive toast stack)
-* **Mobile Drawers & Sheets:** [Vaul](https://vaul.emilkowal.ski/) (Fluid, drag-to-dismiss gesture physics)
-* **Command Palette (K-Bar):** [CMDK](https://cmdk.paco.me/) (Fast, zero-dependency search)
-* **Motion & Physics:** [Motion (Framer)](https://motion.dev/) (Layout animations, spring damping)
-* **Virtualization:** [React Virtuoso](https://virtuoso.dev/) (Smooth infinite lists)
+| Aspect | Default AI Output | With `frontend-noslop` |
+|---|---|---|
+| **Palette** | `bg-gradient-to-r from-purple-500 to-indigo-600` | Curated OKLCH palette with WCAG 2.1 AA contrast compliance. |
+| **Structure** | Centered heading + 3 identical cards | Asymmetrical layouts, contextual demos, dense data tables. |
+| **Typography** | Default sans-serif with arbitrary pixel sizes | Calibrated modular scale with tight headline tracking and proportional leading. |
+| **Copy** | *"Empower teams with cutting-edge synergy"* | Direct, factual descriptions of functionality and metrics. |
+| **State Handling** | Blank screen while fetching, sudden layout shift | Layout-reserved skeletons for loading, plus explicit empty and error states. |
+| **Components** | Unsemantic `div` tags with `onClick` | Semantic HTML with accessible primitives (Radix UI / Base UI). |
 
 ---
 
-## 🚦 The Delivery Gate Checklist
+## Recommended Component Stack
 
-Before code is marked as complete, the agent must check off every item on the **Craft Floor**:
+Based on Emil Kowalski's curated recommendations for interactive web applications:
 
-- [x] **No Default Gradients:** All color variables derive from intentional brand tokens.
-- [x] **All 5 Component States Handled:** Empty, Loading Skeleton, Populated, Error with Retry, Disabled.
-- [x] **Full Keyboard Accessibility:** Every interactive element is reachable via `Tab` with visible focus rings.
-- [x] **True Responsive Geometry:** Flawless visual hierarchy from 360px mobile up to ultrawide monitors.
-- [x] **No AI Cliché Words:** Completely free of *"seamless"*, *"elevate"*, *"next-gen"*, and *"unlock"*.
-
----
-
-## 🤝 Contributing
-
-We welcome community audits, new anti-slop rulesets, and curated library additions!  
-Feel free to open an [Issue](https://github.com/AhmadJalhoom20/frontend-noslop/issues) or submit a [Pull Request](https://github.com/AhmadJalhoom20/frontend-noslop/pulls).
+- **Primitives & Accessibility:** Radix UI (`@radix-ui/*`) or Base UI (`@base-ui-components/react`)
+- **Toasts:** Sonner (`sonner`)
+- **Drawers & Bottom Sheets:** Vaul (`vaul`)
+- **Command Menu:** CMDK (`cmdk`)
+- **Motion:** Motion / Framer Motion (`motion`)
+- **Virtualization:** React Virtuoso (`react-virtuoso`)
 
 ---
 
-## 📜 License
+## Verification Checklist
 
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
+Before code is approved, all five criteria must be satisfied:
 
-<br/>
+1. **Color Purpose:** No unmotivated purple or cyan gradients. Color choices must serve optical hierarchy.
+2. **State Coverage:** All five states implemented: Empty, Loading, Populated, Error with retry, and Disabled.
+3. **Accessibility:** Navigable via keyboard (`Tab`), visible focus rings, valid ARIA labels.
+4. **Responsive Layout:** Tested from 360px mobile viewport up to widescreen displays without horizontal overflow.
+5. **Copy Precision:** Zero marketing clichés (*"seamless"*, *"elevate"*, *"unlock"*, *"next-gen"*).
 
-<div align="center">
-  <sub>Crafted with passion by <a href="https://github.com/AhmadJalhoom20">Ahmad Jalhoom</a>. Say goodbye to AI slop forever.</sub>
-</div>
+---
+
+## References
+
+Detailed guides included in this repository:
+
+- [`references/slop-hall-of-shame.md`](references/slop-hall-of-shame.md) — Catalog of common AI design clichés and their structural fixes.
+- [`references/craft-floor.md`](references/craft-floor.md) — Specifications for typography, OKLCH color, and component states.
+- [`references/curated-libraries.md`](references/curated-libraries.md) — Rationale for selected frontend dependencies.
+- [`references/delivery-gate.md`](references/delivery-gate.md) — Step-by-step audit procedure prior to merging code.
+
+---
+
+## Contributing
+
+Pull requests and issue reports are welcome. When proposing changes to anti-slop rules, include concrete before-and-after code examples demonstrating the failure pattern and its resolution.
+
+## License
+
+MIT © [Ahmad Jalhoom](https://github.com/AhmadJalhoom20)
