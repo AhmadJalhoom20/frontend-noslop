@@ -1,0 +1,9 @@
+{
+  "name": "frontend-noslop",
+  "version": "1.0.0",
+  "description": "The Sovereign Anti-Slop Frontend Engine for AI Coding Agents.",
+  "author": "Ahmad Jalhoom",
+  "license": "MIT",
+  "homepage": "https://github.com/AhmadJalhoom20/frontend-noslop",
+  "keywords": ["skills", "agents", "frontend", "anti-slop", "design", "react", "impeccable", "craft"]
+}

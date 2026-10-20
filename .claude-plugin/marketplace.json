@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "frontend-noslop-marketplace",
+  "description": "Production-grade anti-slop frontend engine for AI coding agents.",
+  "owner": {
+    "name": "Ahmad Jalhoom",
+    "url": "https://github.com/AhmadJalhoom20"
+  },
+  "plugins": [
+    {
+      "name": "frontend-noslop",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "AhmadJalhoom20/frontend-noslop"
+      },
+      "description": "The Sovereign Anti-Slop Frontend Engine for AI Coding Agents.",
+      "homepage": "https://github.com/AhmadJalhoom20/frontend-noslop",
+      "license": "MIT",
+      "keywords": ["skills", "frontend", "design", "anti-slop", "react", "craft"]
+    }
+  ]
+}
