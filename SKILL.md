@@ -1,10 +1,10 @@
 ---
 name: using-frontend-noslop
-description: Use when designing, building, reviewing, or styling any frontend UI, web app, landing page, dashboard, or component, or when seeking to eliminate generic "AI-slop" aesthetics, stupid gradients, clown-car colors, and cookie-cutter templates through real-world domain inspiration.
+description: Use when designing, building, reviewing, or styling any frontend UI, web app, landing page, dashboard, or component. Enforces studio-grade industrial design discipline, automated anti-slop linting, zero stupid gradients, active domain inspiration, and production code recipes.
 user-invocable: true
 license: MIT
 metadata:
-  version: "3.0.0"
+  version: "4.0.0"
   type: "meta-orchestrator"
   integrated_skills:
     - impeccable
@@ -17,192 +17,103 @@ metadata:
     - react-best-practices
 ---
 
-# using-frontend-noslop (v3.0: Domain Inspiration & Zero-Slop Engine)
+# using-frontend-noslop (v4.0: Production-Grade Studio Engine)
 
-An elite orchestration skill that enforces world-class industrial design discipline. It eliminates generic AI aesthetics, stupid gradients, and cookie-cutter templates by **actively extracting visual DNA from premier real-world industry benchmarks** (e.g. Nike/Gymshark for Fitness, SSENSE/Apple for E-Commerce, Stripe/Mercury for Fintech, Linear/Vercel for DevTools).
-
----
-
-## 🧭 Phase 0: Domain Inspiration Reconnaissance (The Industry Archetype Engine)
-
-Before writing any code or choosing components, identify the project's **industry vertical** and anchor your design to the visual DNA of world-class benchmarks:
-
-### 1. Benchmark Identification Matrix
-
-| Industry / Niche | World-Class Benchmarks | Visual Tone & Mood | Signature Accent & Surfaces | Typography Anchor |
-|---|---|---|---|---|
-| **Fitness, Gym & Athletics** | WHOOP, Nike Training, Gymshark, Peloton, Strava | Kinetic, high-energy, aggressive, dark-biased | Deep Carbon (`#0A0A0C`) + Laser Volt (`#CCFF00`) or Infrared (`#FF3B30`) | Condensed bold grotesque (`font-black uppercase`) + mono metrics |
-| **High-End E-Commerce & Retail** | SSENSE, Apple Store, Arc'teryx, Aesop, Shopify Plus | Restrained, editorial, museum-grade product staging | Warm Bone (`#F7F7F5`) / Pure Black + Single Carbon (`#111111`) or Terracotta | Refined Neo-Grotesque (`Geist`) or high-fashion serif (`Playfair`) |
-| **Fintech, Banking & Crypto** | Stripe, Wise, Mercury, Ramp, Cash App | Crystalline precision, cryptographic security, ultra-high trust | Deep Obsidian (`#08090C`) or Bank White + Cobalt (`#2563EB`) or Mint | High-contrast Swiss grid with `tabular-nums` for all figures |
-| **Developer Tools & Cloud Infra** | Linear, Vercel, Supabase, Raycast, GitHub | Keyboard-first, high-density, terminal telemetry | Deep Space Obsidian (`#08090B`) + Monochrome White / Cyan focus | Monospace font (`Geist Mono`, `JetBrains Mono`) for commands |
-| **Food, Dining & Culinary** | Blue Bottle Coffee, Noma, Sweetgreen, Toast POS | Warm, organic, tactile, appetizing, authentic textures | Warm Oatmeal (`#F5F2EB`) + Roasted Espresso (`#1A1615`) + Terracotta | Warm serif headlines (`Fraunces`) paired with geometric body |
-| **Creative Agencies & Portfolios** | Pentagram, ReadCV, Apple Design Awards, Are.na | Bold, confident, unexpected spatial rhythm, scale | Pure Stark Monochrome (`#000000` & `#FFFFFF`) + Single signature tint | Dramatic typographic scale contrast (huge titles vs micro labels) |
-
-*(For full industry breakdown, see `references/domain-design-playbooks.md`).*
-
-### 2. Domain Inspiration Protocol (When Requirements Are Set)
-1. **Identify the Benchmarks**: Name 2-3 premier products that dominate that exact vertical.
-2. **Search Real References if Needed**: If the niche is unique, query `search_web` or Mobbin (`search_screens` / `search_sections`) to extract real-world navigation rails, card densities, and color schemes.
-3. **Build Domain-Specific Signature Components**:
-   - For **Fitness**: Build a Biometric Telemetry HUD, workout routine split timeline, and volume heatmaps (NOT generic 3-card pricing).
-   - For **E-Commerce**: Build a slide-over drawer cart (`vaul`), multi-angle gallery with fixed aspect ratios (`aspect-[3/4]`), and tactile size pill selectors.
-   - For **Fintech**: Build a dual-currency exchange split card, virtual card visualizer, and virtualized transaction ledger.
-   - For **DevTools**: Build an interactive CLI snippet with copy feedback, a `CMDK` command palette, and a real-time service latency meter.
+The authoritative, production-grade frontend engineering and design engine for AI coding agents. It eliminates median AI defaults, stupid gradients, clown-car colors, and cookie-cutter templates through **active real-world domain benchmarking**, **battle-tested code recipes**, **automated craft linting**, and an **uncompromising 50-point quality floor**.
 
 ---
 
-## ⛔ Absolute Invariants: The Color & Gradient Ban Floor
+## 🧭 The 5-Phase Production Pipeline
 
-Before writing any CSS, Tailwind classes, or design tokens, you MUST comply with these 6 non-negotiable negative constraints. Any violation is an immediate code rejection:
+Every interface task must progress through this strict 5-phase pipeline:
 
-| Prohibited Pattern (AI Slop) | Why It Is Banned | Required Replacement |
-|---|---|---|
-| **Gradient Text (`bg-clip-text text-transparent`)** | The #1 lazy AI cliché. Cheapens typography and ruins readability. | **Solid, high-contrast typography**: `#EDEDED` / `#FFFFFF` on dark; `#111111` on light. |
-| **Multi-Color Gradients (`from-purple via-pink to-cyan`)** | Looks like an uncurated 2021 crypto template. Visual noise. | **Zero multi-hue gradients**. Solid surfaces or subtle monochromatic single-step luminance shifts only. |
-| **Ambient Blur Blobs (`blur-3xl bg-purple-500/20`)** | Meaningless glowing circles placed to mask empty layouts. | **Deliberate layout geometry**, structural gridlines, subtle borders, or tangible card surfaces. |
-| **Neon Colored Drop-Shadows (`shadow-indigo-500/50`)** | Makes interfaces look like arcade games rather than software. | **Physical 1px border contrast** (`border-white/[0.08]` or `border-black/[0.08]`) and subtle micro-shadows. |
-| **Candy / Rainbow Badges** | Green, purple, orange, blue pills scattered on the same screen. | **Muted, monochrome tags**: `bg-white/[0.04] text-neutral-300 border-white/[0.08]`. |
-| **Generic Dark Slate (`#0f172a` + glowing rounded-2xl cards)** | Median AI training average. Looks dated and uninspired. | **Intentional deep obsidian (`#08090C`), graphite, warm bone, or crisp monochrome**. |
+```
+[ Phase 0: Domain Reconnaissance ]  → Extract visual DNA from industry leaders (Nike, Apple, Stripe, Linear).
+                 ↓
+[ Phase 1: Palette & Typography ]   → 90/10 Neutral rule. Exactly ONE accent. ZERO gradient text.
+                 ↓
+[ Phase 2: Architectural Recipes ]  → Asymmetrical Bento, Metric Hero, or Drawer Cart (NO generic 3-card grid).
+                 ↓
+[ Phase 3: 5-State Production Code] → Loading (CLS=0), Empty, Error+Retry, Disabled, Populated.
+                 ↓
+[ Phase 4: Automated Craft Audit ]  → Run scripts/audit-noslop.py + 50-Point Craft Floor (Score >= 45/50).
+```
+
+---
+
+## 🏛️ Phase 0: Domain Reconnaissance & Real-World Benchmarking
+
+When given a niche, do NOT invent layout concepts. Anchor directly to premier industry benchmarks:
+
+| Vertical | Premier World Benchmarks | Visual Tone & Mood | Accent & Surfaces | Typography Anchor | Signature Components |
+|---|---|---|---|---|---|
+| **Fitness / Athletics** | WHOOP, Nike Training, Gymshark, Strava | Kinetic, high-energy, dark-biased | Deep Carbon (`#0A0A0C`) + Laser Volt (`#CCFF00`) | Condensed Grotesque (`font-black`) + Mono data | Biometric Telemetry HUD, Workout routine timeline, Volume heatmaps |
+| **High-End E-Commerce** | SSENSE, Apple Store, Arc'teryx, Aesop | Restrained, editorial, museum-quality | Warm Bone (`#F7F7F5`) / Pure Black + Charcoal | High-fashion Serif or Neo-Grotesque (`Geist`) | Slide-over drawer cart (`vaul`), Multi-angle aspect-locked gallery (`aspect-[3/4]`) |
+| **Fintech & Banking** | Stripe, Wise, Mercury, Ramp | Crystalline precision, cryptographic security | Deep Obsidian (`#08090C`) + Industrial Cobalt (`#2563EB`) | Swiss grid with `tabular-nums` for all values | Dual-currency split card, Virtualized ledger, Interactive card visualizer |
+| **Developer Tools** | Linear, Vercel, Supabase, Raycast | High-density, keyboard-first telemetry | Deep Space Obsidian (`#08090B`) + Monochrome White | Monospace font (`Geist Mono`, `Consolas`) | Interactive CLI snippet with copy feedback, `CMDK` (⌘K) palette |
+| **Food & Culinary** | Blue Bottle Coffee, Noma, Toast POS | Warm, organic, tactile, authentic | Warm Oatmeal (`#F5F2EB`) + Roasted Espresso (`#1A1615`) | Warm serif headlines (`Fraunces`) + Clean body | Origin flavor notes meter, Single-click dietary pills, Table reservation wheel |
+
+*(For comprehensive industry blueprints, consult `references/domain-design-playbooks.md`).*
+
+---
+
+## ⛔ Absolute Invariants: The Zero-Tolerance Ban Floor
+
+Any presence of these patterns triggers an immediate automatic rejection:
+
+1. ❌ **NO Gradient Text (`bg-clip-text text-transparent`)**: Headings MUST be solid high-contrast typography (`#EDEDED` / `#FFFFFF` on dark; `#111111` on light).
+2. ❌ **NO Multi-Color Gradients (`from-purple via-pink to-cyan`)**: Multi-hue gradients are strictly banned. Solid surfaces or subtle monochromatic shifts only.
+3. ❌ **NO Ambient Blur Blobs (`blur-3xl bg-purple-500/20`)**: Build tangible layout surfaces and 1px border contrast instead of lazy background glowing circles.
+4. ❌ **NO Neon Glowing Drop-Shadows (`shadow-indigo-500/50`)**: Depth is created with physical 1px border subtleties (`border-white/[0.08]`) and surface elevation.
+5. ❌ **NO Candy/Rainbow Badges**: Badges must use calm neutral tokens (`bg-white/[0.04] text-neutral-300 border-white/[0.08]`).
+6. ❌ **NO Generic 3-Card Clichés**: A centered title followed by 3 identical cards with icons in pastel squares is forbidden. Use asymmetrical hierarchy (Bento, live preview, data rail).
+7. ❌ **NO Non-Semantic Clickable Divs**: Use `<button type="button">` with visible focus rings (`focus-visible:ring-2`).
 
 ---
 
 ## 🎨 The Iron Rule of Color: 90/10 & The Single Accent
 
-1. **The 90/10 Surface-to-Accent Ratio**:
-   - **90%+ of all pixels** must consist of calm, neutral surfaces (Black, Graphite, Charcoal, Stone, Slate-gray, or Warm Bone/Paper).
-   - **Less than 10%** of pixels may carry an accent hue, reserved **STRICTLY** for primary action affordances (primary button, active navigation indicator, focus ring).
+* **90%+ Neutral Canvas**: 90% or more of all screen pixels MUST consist of calm, neutral surfaces (Obsidian `#08090C`, Carbon `#0A0A0C`, Graphite, Slate-gray, or Warm Bone `#F7F7F5`).
+* **The Rule of One**: Pick **EXACTLY ONE** accent hue for the entire interface (e.g. Pure White `#FFFFFF`, Industrial Cobalt `#2563EB`, Laser Volt `#CCFF00`, or Precision Emerald `#10B981`). Never mix competing chromatic accents.
 
-2. **The Single-Hue Rule (Rule of One)**:
-   - Pick **ONE single brand/accent hue** for the entire interface (e.g. Pure Electric Cobalt `#2563EB`, or Signal Amber `#F59E0B`, or Precision Emerald `#10B981`, or Monochromatic High-Contrast `#FFFFFF`).
-   - **NEVER mix competing chromatic hues** (e.g. do NOT combine purple buttons with cyan cards and yellow badges).
-
----
-
-## 📐 Pre-Baked Industrial Palettes
-
-Do not invent arbitrary hex colors. Use one of these three calibrated palettes:
-
-### Palette 1: The Obsidian Monolith (Linear / Vercel Dark Standard)
-*Best for: Developer tools, SaaS platforms, high-performance dashboards, modern web apps.*
-```css
-/* Background & Surfaces */
---bg-canvas: #08090C;        /* Deep obsidian void, NOT washed-out navy */
---bg-surface: #101216;       /* Clean matte surface */
---bg-elevated: #161920;      /* Elevated dialog / dropdown */
---bg-muted: rgba(255, 255, 255, 0.04);
-
-/* Borders (Physical depth over glowing shadows) */
---border-subtle: rgba(255, 255, 255, 0.07);
---border-strong: rgba(255, 255, 255, 0.14);
-
-/* Typography (High optical contrast) */
---text-primary: #EDEDED;     /* Crisp white with zero harsh glare */
---text-secondary: #94969E;   /* Readable neutral secondary */
---text-muted: #5E616B;       /* Calm tertiary */
-
-/* Single Accent (Choose EXACTLY ONE) */
---accent-primary: #FFFFFF;   /* High-contrast Monochrome (Preferred) */
-/* OR: --accent-primary: #3B82F6 (Clean Cobalt) */
-/* OR: --accent-primary: #10B981 (Precision Emerald) */
-```
-
-### Palette 2: The Swiss Editorial (Stripe / Apple Light Standard)
-*Best for: Documentation, fintech, publishing, clean marketing, e-commerce.*
-```css
-/* Background & Surfaces */
---bg-canvas: #FBFBFC;        /* Crisp off-white / bone paper */
---bg-surface: #FFFFFF;       /* Pure white card surface */
---bg-elevated: #FFFFFF;
---bg-muted: #F2F3F5;
-
-/* Borders */
---border-subtle: #E6E8EC;
---border-strong: #D1D5DB;
-
-/* Typography */
---text-primary: #111215;     /* Deep carbon black */
---text-secondary: #5A5E67;
---text-muted: #8B909A;
-
-/* Single Accent */
---accent-primary: #0F172A;   /* Deep Slate/Carbon (Sophisticated) */
-/* OR: --accent-primary: #2563EB (Industrial Blue) */
-```
-
-### Palette 3: The Industrial Titanium (Deep Matte Technical)
-*Best for: High-density data apps, analytics, terminals, developer tools.*
-```css
---bg-canvas: #0C0D0E;
---bg-surface: #151719;
---bg-elevated: #1E2023;
---border-subtle: #24272B;
---border-strong: #363A40;
---text-primary: #F0F2F5;
---text-secondary: #888E96;
---accent-primary: #38BDF8;   /* Precision Cyan strictly for active state */
-```
+### Pre-Baked Calibrated Palettes:
+* **Obsidian Monolith (Linear/Vercel Dark):** Canvas `#08090C`, Surface `#101216`, Elevated `#161920`, Border `rgba(255,255,255,0.08)`, Text Primary `#EDEDED`.
+* **Swiss Editorial (Stripe/Apple Light):** Canvas `#FBFBFC`, Surface `#FFFFFF`, Border `#E6E8EC`, Text Primary `#111215`.
+* **Industrial Titanium (High-Density Dark):** Canvas `#0C0D0E`, Surface `#151719`, Border `#24272B`, Text Primary `#F0F2F5`.
 
 ---
 
-## 🏛️ Layout Discipline: Anti-Slop Architecture
+## 📦 Production Code Recipes & 5-State Architecture
 
-1. **Ban on the Cliché 3-Card Feature Grid**:
-   - Never output a centered headline followed by 3 identical rounded cards, each containing a Lucide icon in a pastel square and two lines of filler text.
-   - **Fix**: Use asymmetrical hierarchy matched to the domain (Bento grid, interactive telemetry, live code preview, or multi-angle product rail).
+Every component MUST implement all five states:
+1. **Initial / Empty**: Clear, helpful prompt (no dead blank space).
+2. **Loading**: Dimension-matched skeleton with zero Cumulative Layout Shift (CLS = 0).
+3. **Populated**: Real, human data layout.
+4. **Error Boundary**: Specific error message with actionable retry button.
+5. **Disabled / Pending**: Opacity feedback with explicit pending state (`aria-busy`).
 
-2. **Typography Scaling & Spacing Rhythm**:
-   - Use a mathematical 8px spacing grid: `gap-2` (8px), `gap-4` (16px), `gap-6` (24px), `gap-8` (32px).
-   - Line height tracking: Tighten titles (`tracking-tight leading-tight`), loosen body text (`leading-relaxed`).
-
-3. **Complete 5-State Component Contract**:
-   Every component MUST implement all five states without exception:
-   - **Initial / Empty**: Clear, helpful prompt (no dead blank space).
-   - **Loading**: Dimension-matched skeleton with zero Cumulative Layout Shift (CLS = 0).
-   - **Populated**: Real, human data layout.
-   - **Error Boundary**: Specific error message with actionable retry button.
-   - **Disabled / Pending**: Opacity feedback with explicit pending state (`aria-busy`).
+*(See `references/code-recipes.md` for copy-pasteable React 19 / Next.js 15 implementations of Data Containers, Metric Heroes, and Asymmetrical Bentos).*
 
 ---
 
-## 🛠️ Complete Orchestration Workflow
+## 🧪 Automated Craft Audit & 50-Point Quality Gate
 
-```
-[ Phase 0: Domain Reconnaissance ] → Identify vertical benchmarks (Fitness, E-Commerce, Fintech, etc.)
-                ↓
-[ Phase 1: Visual DNA & Palette ]  → Enforce 90/10 neutral rule + single accent hue + zero gradient text.
-                ↓
-[ Phase 2: Domain Components ]     → Build signature domain components (HUD, Slide-over cart, Ledger, CLI).
-                ↓
-[ Phase 3: Accessible Engineering] → Radix/Base UI primitives + Strict TypeScript + 5 UI states.
-                ↓
-[ Phase 4: Anti-Slop Verification] → Verify against the Pre-Delivery Checklist below.
-```
-
----
-
-## ✅ The Anti-Slop Pre-Delivery Checklist
-
-Before marking any UI code complete, check off every single item:
-
-- [ ] **Domain Benchmark Grounding**: Interface clearly resembles industry leaders (e.g. WHOOP/Nike for fitness, SSENSE/Apple for retail), NOT generic SaaS templates.
-- [ ] **Signature Domain Components**: Built custom components specific to the niche (e.g. telemetry HUD, slide-over cart), not 3 generic cards.
-- [ ] **No Gradient Text**: All titles and headlines use solid typography.
-- [ ] **No Multi-Color Gradients**: No purple-to-cyan or pink-to-yellow color transitions.
-- [ ] **No Neon Glow Blobs**: No background `blur-3xl` colored circles.
-- [ ] **Single Accent Color**: Exactly one primary accent hue used across the entire page.
-- [ ] **Subtle 1px Borders**: Depth created via borders and elevation, NOT colored box-shadows.
-- [ ] **Real Copy (No Marketing Slop)**: Zero buzzwords (*"seamless"*, *"unlock"*, *"next-gen"*).
-- [ ] **Zero Layout Shift (CLS = 0)**: Skeletons match exact final populated dimensions.
-- [ ] **WCAG 2.1 AA Compliance**: All text passes 4.5:1 contrast against its background.
-- [ ] **Keyboard Accessible**: Visible focus rings on all interactive elements (`focus-visible:ring-2`).
+Before completing any frontend task, verify your code against:
+1. **Automated Linter:** Run `python scripts/audit-noslop.py <path-to-file>` to automatically catch gradient text, blur blobs, and missing accessibility.
+2. **50-Point Self-Critique Score:**
+   - Chromatic Discipline (10 pts)
+   - Domain Realism & Layout Anatomy (10 pts)
+   - 5-State Architecture (10 pts)
+   - Semantic Accessibility & WCAG 2.1 AA (10 pts)
+   - Human Voice & Copy Precision (10 pts)
+   **Threshold: Minimum 45/50 points required for delivery.**
 
 ---
 
 ## ⚡ Direct Invocations
 
-- `/using-frontend-noslop` — Run the full Domain Inspiration & Anti-Slop engine.
-- `/frontend-design` — Formulate domain-specific aesthetic direction.
-- `/frontend-design-deslop` — Strip median templates and enforce 90/10 palettes.
+- `/using-frontend-noslop` — Execute the full studio-grade anti-slop pipeline.
+- `/frontend-design` — Formulate domain-specific aesthetic stance.
 - `/antislop-ui` — Reference specific UI component tokens.
 - `/no-ai-slop` — Sanitize text and microcopy from robotic clichés.
 - `/react-best-practices` — Enforce Server Components and performance patterns.
