@@ -4,7 +4,7 @@ description: Use when designing, building, reviewing, or styling any frontend UI
 user-invocable: true
 license: MIT
 metadata:
-  version: "4.0.0"
+  version: "5.0.0"
   type: "meta-orchestrator"
   integrated_skills:
     - impeccable
@@ -17,43 +17,46 @@ metadata:
     - react-best-practices
 ---
 
-# using-frontend-noslop (v4.0: Production-Grade Studio Engine)
+# using-frontend-noslop (v5.0: The Complete Domain-Tailored Studio Engine)
 
-The authoritative, production-grade frontend engineering and design engine for AI coding agents. It eliminates median AI defaults, stupid gradients, clown-car colors, and cookie-cutter templates through **active real-world domain benchmarking**, **battle-tested code recipes**, **automated craft linting**, and an **uncompromising 50-point quality floor**.
+The authoritative, production-grade frontend engineering and design engine for AI coding agents. It enforces **bespoke, domain-tailored visual DNA for every industry** (Fitness, E-Commerce, Fintech, DevTools, Medical, Real Estate, Food, Education) while completely eliminating generic AI templates, stupid gradients, clown-car colors, asymmetrical side-borders, and layout shifts.
 
 ---
 
 ## 🧭 The 5-Phase Production Pipeline
 
-Every interface task must progress through this strict 5-phase pipeline:
+Every interface task must execute this strict 5-phase pipeline:
 
 ```
-[ Phase 0: Domain Reconnaissance ]  → Extract visual DNA from industry leaders (Nike, Apple, Stripe, Linear).
+[ Phase 0: Domain DNA Lockdown ]    → Detect industry vertical and apply exact colors, fonts & components.
                  ↓
-[ Phase 1: Palette & Typography ]   → 90/10 Neutral rule. Exactly ONE accent. ZERO gradient text.
+[ Phase 1: Palette & Typography ]   → 90/10 Neutral rule. Exactly ONE domain accent. ZERO gradient text.
                  ↓
 [ Phase 2: Architectural Recipes ]  → Asymmetrical Bento, Metric Hero, or Drawer Cart (NO generic 3-card grid).
                  ↓
-[ Phase 3: 5-State Production Code] → Loading (CLS=0), Empty, Error+Retry, Disabled, Populated.
+[ Phase 3: 5-State Production Code] → Shimmer Skeletons (CLS=0), Empty, Error+Retry, Disabled, Populated.
                  ↓
 [ Phase 4: Automated Craft Audit ]  → Run scripts/audit-noslop.py + 50-Point Craft Floor (Score >= 45/50).
 ```
 
 ---
 
-## 🏛️ Phase 0: Domain Reconnaissance & Real-World Benchmarking
+## 🏛️ Phase 0: Mandatory Domain DNA Lockdown
 
-When given a niche, do NOT invent layout concepts. Anchor directly to premier industry benchmarks:
+When tasked with building for ANY domain, you MUST NOT guess or default to generic SaaS cards. You MUST load and enforce the exact **Domain DNA Blueprint** from `references/domain-design-playbooks.md`:
 
-| Vertical | Premier World Benchmarks | Visual Tone & Mood | Accent & Surfaces | Typography Anchor | Signature Components |
+| Industry / Domain | Premier Benchmarks | Exact Palette Formula | Typography Stack | Mandatory Signature Components | Domain Skeleton Spec |
 |---|---|---|---|---|---|
-| **Fitness / Athletics** | WHOOP, Nike Training, Gymshark, Strava | Kinetic, high-energy, dark-biased | Deep Carbon (`#0A0A0C`) + Laser Volt (`#CCFF00`) | Condensed Grotesque (`font-black`) + Mono data | Biometric Telemetry HUD, Workout routine timeline, Volume heatmaps |
-| **High-End E-Commerce** | SSENSE, Apple Store, Arc'teryx, Aesop | Restrained, editorial, museum-quality | Warm Bone (`#F7F7F5`) / Pure Black + Charcoal | High-fashion Serif or Neo-Grotesque (`Geist`) | Slide-over drawer cart (`vaul`), Multi-angle aspect-locked gallery (`aspect-[3/4]`) |
-| **Fintech & Banking** | Stripe, Wise, Mercury, Ramp | Crystalline precision, cryptographic security | Deep Obsidian (`#08090C`) + Industrial Cobalt (`#2563EB`) | Swiss grid with `tabular-nums` for all values | Dual-currency split card, Virtualized ledger, Interactive card visualizer |
-| **Developer Tools** | Linear, Vercel, Supabase, Raycast | High-density, keyboard-first telemetry | Deep Space Obsidian (`#08090B`) + Monochrome White | Monospace font (`Geist Mono`, `Consolas`) | Interactive CLI snippet with copy feedback, `CMDK` (⌘K) palette |
-| **Food & Culinary** | Blue Bottle Coffee, Noma, Toast POS | Warm, organic, tactile, authentic | Warm Oatmeal (`#F5F2EB`) + Roasted Espresso (`#1A1615`) | Warm serif headlines (`Fraunces`) + Clean body | Origin flavor notes meter, Single-click dietary pills, Table reservation wheel |
+| **Fitness / Athletics** | WHOOP, Nike Training, Gymshark | Carbon `#08090A` + Laser Volt `#CCFF00` or Infrared `#FF2A2A` | Condensed Grotesque (`font-black uppercase`) + Mono data | Biometric Telemetry HUD, Workout routine timeline, 7-day volume heatmap | Circular gauge shimmer + tabular metric line skeletons |
+| **High-End E-Commerce** | SSENSE, Apple Store, Arc'teryx, Aesop | Warm Bone `#F7F7F5` or Velvet Black + Carbon `#111111` | High-fashion Serif or Neo-Grotesque (`Geist`) + micro-labels | Slide-over drawer cart (`vaul`), Aspect-locked gallery (`aspect-[3/4]`), Tactile size pills | Aspect-locked photo card skeleton + price/title skeletons |
+| **Fintech & Banking** | Stripe, Wise, Mercury, Ramp | Vault Obsidian `#08090C` or Bank White + Cobalt `#2563EB` | Swiss Grotesque (`Inter`) with strict `tabular-nums` | Dual-currency live converter card, Virtual debit card visualizer, Virtualized ledger | Fixed-width tabular row skeletons with status pills |
+| **Developer Tools** | Linear, Vercel, Supabase, Raycast | Deep Space Obsidian `#08090B` + Monochrome White | Monospace font (`Geist Mono`, `JetBrains Mono`) | Interactive CLI snippet with copy feedback, `CMDK` (⌘K) search palette | Monospaced code line skeletons with varying widths |
+| **Healthcare & Medical** | Oscar Health, One Medical, Mayo Clinic | Sterile White `#FAFBFC` + Medical Sapphire `#0284C7` | Humanist Sans (`Plus Jakarta Sans`) for maximum trust | Appointment slot stepper with doctor photo, HIPAA security badge | Doctor avatar circle skeleton + specialty pill |
+| **Real Estate & Architecture**| The Agency, Sotheby's, AD | Travertine `#F5F2EB` or Marble `#0D0D0E` + Bronze `#92400E` | Architectural Sans (`Cabinet Grotesk`) or Serif | Interactive SVG floorplan viewer, Widescreen photo slider (`aspect-[16/10]`) | Widescreen photo skeleton (`aspect-[16/10]`) |
+| **Food & Culinary Arts** | Blue Bottle Coffee, Noma, Toast POS | Warm Oat Milk `#F5F2EB` + Roasted Espresso + Terracotta `#C85A32` | Expressive Culinary Serif (`Fraunces`) + clean body | Flavor notes radar, 1-click dietary filter pills, Table reservation wheel | Menu item row skeleton with price & description |
+| **Education & E-Learning** | MasterClass, Brilliant, Khan Academy | Campus Cream `#FDFCF7` or Study Navy + Amber `#D97706` | High-focus reading sans (`Inter`, `Public Sans`) | Curriculum syllabus tree accordion, Daily progress streak, Quiz check card | Expandable syllabus module tree skeleton |
 
-*(For comprehensive industry blueprints, consult `references/domain-design-playbooks.md`).*
+*(Consult `references/domain-design-playbooks.md` for full implementation details, copy tones, and forbidden words).*
 
 ---
 
@@ -76,12 +79,7 @@ Any presence of these patterns triggers an immediate automatic rejection:
 ## 🎨 The Iron Rule of Color: 90/10 & The Single Accent
 
 * **90%+ Neutral Canvas**: 90% or more of all screen pixels MUST consist of calm, neutral surfaces (Obsidian `#08090C`, Carbon `#0A0A0C`, Graphite, Slate-gray, or Warm Bone `#F7F7F5`).
-* **The Rule of One**: Pick **EXACTLY ONE** accent hue for the entire interface (e.g. Pure White `#FFFFFF`, Industrial Cobalt `#2563EB`, Laser Volt `#CCFF00`, or Precision Emerald `#10B981`). Never mix competing chromatic accents.
-
-### Pre-Baked Calibrated Palettes:
-* **Obsidian Monolith (Linear/Vercel Dark):** Canvas `#08090C`, Surface `#101216`, Elevated `#161920`, Border `rgba(255,255,255,0.08)`, Text Primary `#EDEDED`.
-* **Swiss Editorial (Stripe/Apple Light):** Canvas `#FBFBFC`, Surface `#FFFFFF`, Border `#E6E8EC`, Text Primary `#111215`.
-* **Industrial Titanium (High-Density Dark):** Canvas `#0C0D0E`, Surface `#151719`, Border `#24272B`, Text Primary `#F0F2F5`.
+* **The Rule of One**: Pick **EXACTLY ONE** accent hue for the entire interface (matched to the domain). Never mix competing chromatic accents.
 
 ---
 
@@ -89,19 +87,19 @@ Any presence of these patterns triggers an immediate automatic rejection:
 
 Every component MUST implement all five states:
 1. **Initial / Empty**: Clear, helpful prompt (no dead blank space).
-2. **Loading**: Dimension-matched skeleton with zero Cumulative Layout Shift (CLS = 0).
+2. **Loading**: Dimension-matched **Shimmer Skeleton** with zero Cumulative Layout Shift (CLS = 0).
 3. **Populated**: Real, human data layout.
 4. **Error Boundary**: Specific error message with actionable retry button.
 5. **Disabled / Pending**: Opacity feedback with explicit pending state (`aria-busy`).
 
-*(See `references/code-recipes.md` for copy-pasteable React 19 / Next.js 15 implementations of Data Containers, Metric Heroes, and Asymmetrical Bentos).*
+*(See `references/code-recipes.md` for copy-pasteable React 19 / Next.js 15 implementations of Data Containers, Metric Heroes, Asymmetrical Bentos, Shimmer Skeletons, and Symmetrical Status Cards).*
 
 ---
 
 ## 🧪 Automated Craft Audit & 50-Point Quality Gate
 
 Before completing any frontend task, verify your code against:
-1. **Automated Linter:** Run `python scripts/audit-noslop.py <path-to-file>` to automatically catch gradient text, blur blobs, and missing accessibility.
+1. **Automated Linter:** Run `python scripts/audit-noslop.py <path-to-file>` to automatically catch gradient text, blur blobs, sidebg stripes, and missing accessibility.
 2. **50-Point Self-Critique Score:**
    - Chromatic Discipline (10 pts)
    - Domain Realism & Layout Anatomy (10 pts)
