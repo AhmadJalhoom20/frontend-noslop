@@ -82,6 +82,22 @@ LINT_RULES = [
         "severity": "MEDIUM",
         "penalty": 5,
         "fix": "Add explicit focus-visible rings for WCAG 2.1 AA keyboard accessibility (e.g. focus-visible:ring-2 focus-visible:ring-ring)."
+    },
+    {
+        "id": "SLOP-009",
+        "name": "Asymmetrical Colored Side-Border Stripe (The Sidebg Cliché)",
+        "pattern": r"border-(l|r|s|e)-[0-9]+\s+border-(indigo|purple|emerald|cyan|blue|green|amber|red|pink|violet|teal|rose)-[0-9]{3}",
+        "severity": "HIGH",
+        "penalty": 10,
+        "fix": "Remove the cheap colored side-accent stripe. Use complete 360-degree border geometry (border border-white/[0.08]) with an inline status dot or badge."
+    },
+    {
+        "id": "SLOP-010",
+        "name": "Spinning Loader Fallback Instead of Skeleton",
+        "pattern": r"(animate-spin\s+rounded-full\s+border-(2|4)|LucideLoader\s+className=.*animate-spin)",
+        "severity": "MEDIUM",
+        "penalty": 5,
+        "fix": "Replace blocking spinners on page/card content with dimension-matched Shimmer Skeletons to prevent layout shift."
     }
 ]
 

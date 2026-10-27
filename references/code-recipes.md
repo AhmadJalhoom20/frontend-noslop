@@ -229,3 +229,109 @@ export function FeatureBento() {
   );
 }
 ```
+
+
+---
+
+## 4. Studio Shimmer Skeleton Loader Recipe (Zero-CLS & Smooth Light Sweep)
+
+Replaces generic pulsing gray rectangles with a luxury linear shimmer animation that glides effortlessly across content while preserving exact layout geometry.
+
+```tsx
+export function Skeleton({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      aria-hidden="true"
+      className={`relative overflow-hidden rounded-md bg-neutral-900 border border-white/[0.04] before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_1.8s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/[0.06] before:to-transparent ${className}`}
+      {...props}
+    />
+  );
+}
+
+// Tailored Card Skeleton Example
+export function CourseCardSkeleton() {
+  return (
+    <div className="w-full max-w-xl rounded-xl border border-white/[0.08] bg-neutral-950 p-6 space-y-4">
+      {/* Top Header: Badge + Title Skeleton */}
+      <div className="flex items-center justify-between">
+        <Skeleton className="h-6 w-24 rounded-full" />
+        <Skeleton className="h-5 w-48" />
+      </div>
+
+      {/* Reference Subtitle Skeleton */}
+      <Skeleton className="h-4 w-32" />
+
+      {/* Multiline Body Paragraph Skeleton */}
+      <div className="space-y-2 pt-2">
+        <Skeleton className="h-4 w-full" />
+        <Skeleton className="h-4 w-5/6" />
+        <Skeleton className="h-4 w-3/4" />
+      </div>
+
+      {/* Footer / Meta Skeleton */}
+      <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between">
+        <Skeleton className="h-4 w-28" />
+        <Skeleton className="h-8 w-24 rounded-lg" />
+      </div>
+    </div>
+  );
+}
+```
+
+```css
+/* Add to tailwind.config or globals.css */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+```
+
+---
+
+## 5. Clean Symmetrical Status Card Recipe (Anti-Sidebg / Zero-Side-Border)
+
+Eliminates the cliché asymmetrical colored side-border (`border-r-4`, `border-l-4`). Uses clean 360° perimeter borders, calm typography, and an inline status indicator.
+
+```tsx
+interface StatusCardProps {
+  badgeText: string;
+  title: string;
+  referenceCode: string;
+  description: string;
+}
+
+export function StatusCard({
+  badgeText,
+  title,
+  referenceCode,
+  description,
+}: StatusCardProps) {
+  return (
+    <article className="group relative w-full max-w-2xl rounded-xl border border-white/[0.08] bg-neutral-950 p-6 hover:border-white/[0.14] transition-colors duration-200">
+      {/* Symmetrical Header */}
+      <div className="flex items-center justify-between gap-4 flex-wrap">
+        <h3 className="text-base font-semibold text-neutral-100 tracking-tight">
+          {title}
+        </h3>
+        
+        {/* Discrete Symmetrical Badge with Status Dot (NO SIDE BORDER) */}
+        <div className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-950/20 px-2.5 py-1 text-xs font-medium text-emerald-400">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          <span>{badgeText}</span>
+        </div>
+      </div>
+
+      {/* Reference Tag */}
+      <div className="mt-2 text-xs font-mono text-neutral-500">
+        {referenceCode}
+      </div>
+
+      {/* Description */}
+      <p className="mt-3 text-sm text-neutral-400 leading-relaxed">
+        {description}
+      </p>
+    </article>
+  );
+}
+```

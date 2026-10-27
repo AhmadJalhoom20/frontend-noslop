@@ -57,3 +57,18 @@ This document catalogs the most egregious visual and architectural clichés gene
 * **The Tell:** Scattering `"use client"` at the root of Next.js pages, cascading `useEffect` data fetching loops, unmemoized heavy lists.
 * **Why It’s Slop:** Sluggish frame rates and high Cumulative Layout Shift (CLS).
 * **The Fix:** Server Components by default, streaming Suspense boundaries, and zero-CLS skeleton reservations (Enforced via `react-best-practices`).
+
+
+---
+
+### 9. The Asymmetrical Colored Side-Border Stripe (The "Sidebg" Cliché)
+* **The Tell:** `border-r-4 border-emerald-500` or `border-l-4 border-indigo-500` applied to cards as a decorative accent bar on one side.
+* **Why It’s Slop:** It looks like an outdated 2015 Bootstrap warning alert box or an uninspired admin dashboard template. It breaks modern architectural symmetry and feels amateurish.
+* **The Fix:** Complete 360-degree perimeter border geometry (`border border-white/[0.08]`). If status indication is needed, use a clean inline status pill with a pulsing dot (`h-1.5 w-1.5 rounded-full`), NEVER an asymmetrical vertical colored stripe stuck to the side.
+
+---
+
+### 10. The Spinning Wheel Instead of Dimension-Matched Skeleton
+* **The Tell:** Centering a generic `<LucideLoader className="animate-spin" />` in the middle of a blank page, causing content to violently jump into view when loaded.
+* **Why It’s Slop:** Massive Cumulative Layout Shift (CLS) and jarring user experience.
+* **The Fix:** High-end **Shimmer Skeleton Loaders** matching the exact height, line-count, and layout of the final populated state.

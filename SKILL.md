@@ -68,6 +68,8 @@ Any presence of these patterns triggers an immediate automatic rejection:
 5. ❌ **NO Candy/Rainbow Badges**: Badges must use calm neutral tokens (`bg-white/[0.04] text-neutral-300 border-white/[0.08]`).
 6. ❌ **NO Generic 3-Card Clichés**: A centered title followed by 3 identical cards with icons in pastel squares is forbidden. Use asymmetrical hierarchy (Bento, live preview, data rail).
 7. ❌ **NO Non-Semantic Clickable Divs**: Use `<button type="button">` with visible focus rings (`focus-visible:ring-2`).
+8. ❌ **NO Asymmetrical Colored Side-Borders ("Sidebg" Cliché)**: Never use `border-l-4` or `border-r-4` with colored borders as an accent stick. Cards MUST have unified, symmetrical 360° perimeter borders (`border border-white/[0.08]`). Use an inline status dot/pill for indicators.
+9. ❌ **NO Blocking Spinners in Place of Skeletons**: Never drop an isolated spinner on an empty screen. Content loading MUST implement dimension-matched **Shimmer Skeletons** (`references/code-recipes.md#4`) that reserve exact layout space (zero CLS).
 
 ---
 
