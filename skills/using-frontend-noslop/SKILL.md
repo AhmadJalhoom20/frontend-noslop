@@ -1,10 +1,10 @@
 ---
 name: using-frontend-noslop
-description: Use when designing, building, reviewing, or styling any frontend UI, web app, landing page, dashboard, or component, or when seeking to eliminate generic "AI-slop" aesthetics, cookie-cutter templates, and uninspired design defaults.
+description: Use when designing, building, reviewing, or styling any frontend UI, web app, landing page, dashboard, or component, or when seeking to eliminate generic "AI-slop" aesthetics, stupid gradients, clown-car colors, and cookie-cutter templates.
 user-invocable: true
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "2.0.0"
   type: "meta-orchestrator"
   integrated_skills:
     - impeccable
@@ -17,125 +17,168 @@ metadata:
     - react-best-practices
 ---
 
-# using-frontend-noslop
+# using-frontend-noslop (v2.0: Anti-Slop & Zero-Stupid-Gradients)
 
-An orchestration skill that integrates `impeccable`, `frontend-design`, `design-taste-frontend`, `frontend-design-deslop`, `antislop-ui`, `no-ai-slop`, `pick-ui-library`, and `react-best-practices` into a single, cohesive frontend design and engineering pipeline.
-
----
-
-## Core Rule: The Anti-Slop Floor
-
-Do not output median AI code. Language models default to the statistical average of their training data: dark slate backgrounds, rounded-2xl cards with glowing borders, purple-to-cyan gradients, and generic marketing copy.
-
-Every interface must have an intentional aesthetic direction, accessible semantics, responsive geometry, and complete state handling.
+An elite orchestration skill that enforces industrial design discipline, eliminating generic AI aesthetics, unmotivated multi-color gradients, saturated neon clutter, and cookie-cutter templates across all frontend code.
 
 ---
 
-## Orchestration Workflow
+## ⛔ Absolute Invariants: The Color & Gradient Ban Floor
 
-Follow this sequence for any UI development task:
+Before writing any CSS, Tailwind classes, or design tokens, you MUST comply with these 6 non-negotiable negative constraints. Any violation is an immediate code rejection:
 
-```
-[ Phase 1: Aesthetic Stance ]  → frontend-design + frontend-design-deslop
-             ↓
-[ Phase 2: Design Tokens ]     → antislop-ui + DESIGN.md (OKLCH, Typography)
-             ↓
-[ Phase 3: Library Selection ] → pick-ui-library (Curated Primitives)
-             ↓
-[ Phase 4: Production Code ]   → react-best-practices + Incremental TDD
-             ↓
-[ Phase 5: Verification Gate ] → impeccable (/critique, /polish) + no-ai-slop
-```
-
----
-
-### Phase 1: Formulate the Aesthetic Stance
-*Required:* `frontend-design` and `frontend-design-deslop`
-
-1. Define the interface purpose before writing code. Determine who uses the interface and what problem it solves.
-2. Declare an explicit, named visual direction derived from the domain (e.g. Editorial Brutalism, Swiss International, Luxury Utilitarian, Retro-Futurist, Technical Density).
-3. Do not default to generic SaaS dark mode or unmotivated gradients. If requirements are ambiguous, prompt the user for direction before implementing.
-
----
-
-### Phase 2: Design Tokens and Color Palette
-*Required:* `antislop-ui` and `frontend-design-deslop`
-
-1. Color:
-   - Prefer OKLCH tokens for consistent perceptual lightness.
-   - Do not use blue-to-purple or purple-to-pink gradients as default visual treatments.
-   - Gradients are permitted only when serving a structural hierarchy function (such as depth elevation or state change).
-2. Typography:
-   - Choose a distinct font pairing matched to the aesthetic stance.
-   - Adhere to a strict modular type scale with controlled line heights and tracking.
-3. Whitespace:
-   - Maintain proportional spacing rhythm using a mathematical 4px/8px grid.
-
----
-
-### Phase 3: Component and Library Selection
-*Required:* `pick-ui-library`
-
-Use tested, unstyled, accessible primitives:
-
-| Requirement | Recommended Library | Rationale |
+| Prohibited Pattern (AI Slop) | Why It Is Banned | Required Replacement |
 |---|---|---|
-| Primitives / Accessibility | Radix UI / Base UI | Unstyled, fully accessible, keyboard-first |
-| Toasts / Notifications | Sonner | Stacked micro-interactions, responsive |
-| Drawers / Bottom Sheets | Vaul | Fluid drag-to-dismiss physics |
-| Command Menu | CMDK | Fast, keyboard-first fuzzy filtering |
-| Motion / Animations | Motion (Framer Motion) | Spring physics, layout morphing |
-| Virtualization | React Virtuoso | High-performance dynamic list handling |
+| **Gradient Text (`bg-clip-text text-transparent`)** | The #1 lazy AI cliché. Cheapens typography and ruins readability. | **Solid, high-contrast typography**: `#EDEDED` / `#FFFFFF` on dark; `#111111` on light. |
+| **Multi-Color Gradients (`from-purple via-pink to-cyan`)** | Looks like an uncurated 2021 crypto template. Visual noise. | **Zero multi-hue gradients**. Solid surfaces or subtle monochromatic single-step luminance shifts only. |
+| **Ambient Blur Blobs (`blur-3xl bg-purple-500/20`)** | Meaningless glowing circles placed to mask empty layouts. | **Deliberate layout geometry**, structural gridlines, subtle borders, or tangible card surfaces. |
+| **Neon Colored Drop-Shadows (`shadow-indigo-500/50`)** | Makes interfaces look like arcade games rather than software. | **Physical 1px border contrast** (`border-white/[0.08]` or `border-black/[0.08]`) and subtle micro-shadows. |
+| **Candy / Rainbow Badges** | Green, purple, orange, blue pills scattered on the same screen. | **Muted, monochrome tags**: `bg-white/[0.04] text-neutral-300 border-white/[0.08]`. |
+| **Generic Dark Slate (`#0f172a` + glowing rounded-2xl cards)** | Median AI training average. Looks dated and uninspired. | **Intentional deep obsidian (`#08090C`), graphite, warm bone, or crisp monochrome**. |
 
 ---
 
-### Phase 4: Production Architecture
-*Required:* `react-best-practices`
+## 🎨 The Iron Rule of Color: 90/10 & The Single Accent
 
-1. Server Components by default; isolate `"use client"` to interactive leaves of the component tree.
-2. Reserve aspect ratios and dimensions to prevent layout shifts (zero CLS).
-3. Implement all five fundamental component states:
-   - Initial / Empty
-   - Loading (dimension-matched skeleton)
-   - Populated
-   - Error (with retry mechanism)
-   - Disabled / Pending
+1. **The 90/10 Surface-to-Accent Ratio**:
+   - **90%+ of all pixels** must consist of calm, neutral surfaces (Black, Graphite, Charcoal, Stone, Slate-gray, or Warm Bone/Paper).
+   - **Less than 10%** of pixels may carry an accent hue, reserved **STRICTLY** for primary action affordances (primary button, active navigation indicator, focus ring).
+
+2. **The Single-Hue Rule (Rule of One)**:
+   - Pick **ONE single brand/accent hue** for the entire interface (e.g. Pure Electric Cobalt `#2563EB`, or Signal Amber `#F59E0B`, or Precision Emerald `#10B981`, or Monochromatic High-Contrast `#FFFFFF`).
+   - **NEVER mix competing chromatic hues** (e.g. do NOT combine purple buttons with cyan cards and yellow badges).
 
 ---
 
-### Phase 5: Verification Gate
-*Required:* `impeccable` and `no-ai-slop`
+## 📐 Battle-Tested Palettes (Copy & Enforce Directly)
 
-Before completing the task, verify the implementation against this checklist:
+Do not invent arbitrary hex colors. Use one of these three calibrated palettes:
 
-- [ ] Palette Purpose: No arbitrary purple/cyan gradients.
-- [ ] Structural Variety: No generic 3-card feature grids with placeholder icons.
-- [ ] Copy Precision: All placeholder text replaced with direct, human wording.
-- [ ] Accessibility: WCAG 2.1 AA contrast verified, full keyboard navigation with visible focus rings.
-- [ ] Viewport Integrity: Tested at 360px mobile width without horizontal overflow.
+### Palette 1: The Obsidian Monolith (Linear / Vercel Dark Standard)
+*Best for: Developer tools, SaaS platforms, high-performance dashboards, modern web apps.*
+```css
+/* Background & Surfaces */
+--bg-canvas: #08090C;        /* Deep obsidian void, NOT washed-out navy */
+--bg-surface: #101216;       /* Clean matte surface */
+--bg-elevated: #161920;      /* Elevated dialog / dropdown */
+--bg-muted: rgba(255, 255, 255, 0.04);
 
-Invoke `/critique` or `/polish` when available to verify optical alignment and hierarchy.
+/* Borders (Physical depth over glowing shadows) */
+--border-subtle: rgba(255, 255, 255, 0.07);
+--border-strong: rgba(255, 255, 255, 0.14);
+
+/* Typography (High optical contrast) */
+--text-primary: #EDEDED;     /* Crisp white with zero harsh glare */
+--text-secondary: #94969E;   /* Readable neutral secondary */
+--text-muted: #5E616B;       /* Calm tertiary */
+
+/* Single Accent (Choose EXACTLY ONE) */
+--accent-primary: #FFFFFF;   /* High-contrast Monochrome (Preferred) */
+/* OR: --accent-primary: #3B82F6 (Clean Cobalt) */
+/* OR: --accent-primary: #10B981 (Precision Emerald) */
+```
+
+### Palette 2: The Swiss Editorial (Stripe / Apple Light Standard)
+*Best for: Documentation, fintech, publishing, clean marketing, e-commerce.*
+```css
+/* Background & Surfaces */
+--bg-canvas: #FBFBFC;        /* Crisp off-white / bone paper */
+--bg-surface: #FFFFFF;       /* Pure white card surface */
+--bg-elevated: #FFFFFF;
+--bg-muted: #F2F3F5;
+
+/* Borders */
+--border-subtle: #E6E8EC;
+--border-strong: #D1D5DB;
+
+/* Typography */
+--text-primary: #111215;     /* Deep carbon black */
+--text-secondary: #5A5E67;
+--text-muted: #8B909A;
+
+/* Single Accent */
+--accent-primary: #0F172A;   /* Deep Slate/Carbon (Sophisticated) */
+/* OR: --accent-primary: #2563EB (Industrial Blue) */
+```
+
+### Palette 3: The Industrial Titanium (Deep Matte Technical)
+*Best for: High-density data apps, analytics, terminals, developer tools.*
+```css
+--bg-canvas: #0C0D0E;
+--bg-surface: #151719;
+--bg-elevated: #1E2023;
+--border-subtle: #24272B;
+--border-strong: #363A40;
+--text-primary: #F0F2F5;
+--text-secondary: #888E96;
+--accent-primary: #38BDF8;   /* Precision Cyan strictly for active state */
+```
 
 ---
 
-## Red Flags
+## 🏛️ Layout Discipline: Anti-Slop Architecture
 
-| Rationalization | Reality |
-|---|---|
-| "A dark card with a subtle glow looks modern." | It is a common AI cliché. Build an intentional palette based on the product. |
-| "I will add the loading state later." | Unhandled states cause layout jumps and broken UX. Build them now. |
-| "The copy is just placeholder for now." | Generic AI copy undermines interface quality. Write clear, direct text. |
-| "A 3-column card section is standard." | It indicates unconsidered layout design. Match layout to content requirements. |
+1. **Ban on the Cliché 3-Card Feature Grid**:
+   - Never output a centered headline followed by 3 identical rounded cards, each containing a Lucide icon in a pastel square and two lines of filler text.
+   - **Fix**: Use asymmetrical hierarchy:
+     - 1 large interactive showcase card + 2 compact metric/list cards.
+     - Live data table / code editor view + side-by-side verification stream.
+     - Bento grid with varying aspect ratios matched to the content.
+
+2. **Typography Scaling & Spacing Rhythm**:
+   - Use a mathematical 8px spacing grid: `gap-2` (8px), `gap-4` (16px), `gap-6` (24px), `gap-8` (32px).
+   - Line height tracking: Tighten titles (`tracking-tight leading-tight`), loosen body text (`leading-relaxed`).
+
+3. **Complete 5-State Component Contract**:
+   Every component MUST implement all five states without exception:
+   - **Initial / Empty**: Clear, helpful prompt (no dead blank space).
+   - **Loading**: Dimension-matched skeleton with zero Cumulative Layout Shift (CLS = 0).
+   - **Populated**: Real, human data layout.
+   - **Error Boundary**: Specific error message with actionable retry button.
+   - **Disabled / Pending**: Opacity feedback with explicit pending state (`aria-busy`).
 
 ---
 
-## Direct Invocations
+## 🛠️ Orchestration Pipeline
 
-- `/impeccable` — Run the full craft floor and audit engine.
-- `/frontend-design` — Generate intentional visual directions.
-- `/design-taste-frontend` — Audit typography scale and spacing tension.
-- `/frontend-design-deslop` — Strip median templates and create OKLCH tokens.
-- `/antislop-ui` — Reference specific UI pattern rules.
-- `/no-ai-slop` — Edit text and microcopy for clarity.
-- `/pick-ui-library` — Select curated frontend packages.
-- `/react-best-practices` — Enforce React and Next.js architecture standards.
+Execute tasks in strict order:
+
+```
+[ Phase 1: Aesthetic Stance ]  → Choose 1 Palette Archetype (Obsidian, Swiss, or Industrial)
+             ↓
+[ Phase 2: Color Lockdown ]    → Enforce 90/10 rule. Zero gradient text. Zero neon blur blobs.
+             ↓
+[ Phase 3: Layout Geometry ]   → Asymmetrical bento/data hierarchy (NO 3-identical-card grid).
+             ↓
+[ Phase 4: Accessible Code ]   → Radix / Base UI primitives + strict TypeScript + 5 UI states.
+             ↓
+[ Phase 5: Verification Gate ] → Verify against the Anti-Slop Audit Checklist below.
+```
+
+---
+
+## ✅ The Anti-Slop Pre-Delivery Checklist
+
+Before marking any UI code complete, check off every single item:
+
+- [ ] **No Gradient Text**: All titles and headlines use solid typography.
+- [ ] **No Multi-Color Gradients**: No purple-to-cyan or pink-to-yellow color transitions.
+- [ ] **No Neon Glow Blobs**: No background `blur-3xl` colored circles.
+- [ ] **Single Accent Color**: Exactly one primary accent hue used across the entire page.
+- [ ] **Subtle 1px Borders**: Depth created via borders and elevation, NOT colored box-shadows.
+- [ ] **No 3-Card Cliché**: Layout is asymmetrical and customized to actual content.
+- [ ] **Real Copy (No Marketing Slop)**: Zero buzzwords (*"seamless"*, *"unlock"*, *"next-gen"*).
+- [ ] **Zero Layout Shift (CLS = 0)**: Skeletons match exact final populated dimensions.
+- [ ] **WCAG 2.1 AA Compliance**: All text passes 4.5:1 contrast against its background.
+- [ ] **Keyboard Accessible**: Visible focus rings on all interactive elements (`focus-visible:ring-2`).
+
+---
+
+## ⚡ Direct Invocations
+
+- `/using-frontend-noslop` — Run this orchestrator with zero-stupid-gradient enforcement.
+- `/frontend-design` — Choose an intentional aesthetic stance.
+- `/frontend-design-deslop` — Strip median templates and sanitize colors.
+- `/antislop-ui` — Reference specific UI component tokens.
+- `/no-ai-slop` — Sanitize text and microcopy from robotic clichés.
+- `/react-best-practices` — Enforce Server Components and performance patterns.
